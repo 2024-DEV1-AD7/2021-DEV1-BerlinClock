@@ -18,14 +18,14 @@ class MinutesHelper {
         if HourTick {
             return Color.yellow
         }
-        return Color.gray
+        return Color.white
     }
     
     func checkColorForMinutes2Steps(By HourTick: Bool) -> Color {
         if HourTick {
             return Color.red
         }
-        return Color.gray
+        return Color.white
     }
     
     func lightCountsMinutesTop(With Expression: Int) -> Int {
@@ -41,9 +41,9 @@ class MinutesHelper {
         let isLightOn = index < count
 
         if isRedLight {
-            return isLightOn ? .red : .gray
+            return isLightOn ? .red : .white
         } else {
-            return isLightOn ? .yellow : .gray
+            return isLightOn ? .yellow : .white
         }
     }
     

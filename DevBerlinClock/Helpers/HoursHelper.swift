@@ -18,7 +18,7 @@ class HoursHelper {
         if HourTick {
             return Color.red
         }
-        return Color.gray
+        return Color.white
     }
     
     func lightCountsHoursTop(With Expression: Int) -> Int {

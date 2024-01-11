@@ -16,7 +16,7 @@ struct SecondRowView: View {
             .foregroundColor(SecondsHelper.shared.checkColorForSeconds(By: second))
             .overlay(
                 Circle()
-                    .stroke(Color.black, lineWidth: 1)
+                    .stroke(Color.black, lineWidth: 3)
             )
             .accessibility(identifier: "secondRowCircle")
     }

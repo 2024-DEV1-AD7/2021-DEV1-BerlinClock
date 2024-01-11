@@ -20,7 +20,7 @@ struct HoursRowView: View {
                                     .frame(width: 70, height: 30)
                                     .overlay(
                                         UnevenRoundedRectangle(cornerRadii: .init(topLeading: 10.0, bottomLeading: 10))
-                                            .stroke(Color.black, lineWidth: 1)
+                                            .stroke(Color.black, lineWidth: 3)
                                     )
                 }
                 if(index == 1 || index == 2) {
@@ -29,7 +29,7 @@ struct HoursRowView: View {
                         .foregroundColor(HoursHelper.shared.checkColorForHours(By: index < self.lightsCount))
                         .overlay(
                             RoundedRectangle(cornerRadius: 0)
-                                .stroke(Color.black, lineWidth: 1)
+                                .stroke(Color.black, lineWidth: 3)
                         )
                 }
                 if(index == 3) {
@@ -38,7 +38,7 @@ struct HoursRowView: View {
                                     .frame(width: 70, height: 30)
                                     .overlay(
                                         UnevenRoundedRectangle(cornerRadii: .init(bottomTrailing: 10, topTrailing: 10))
-                                            .stroke(Color.black, lineWidth: 1)
+                                            .stroke(Color.black, lineWidth: 3)
                                     )
                 }
                 

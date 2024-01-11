@@ -18,7 +18,7 @@ class SecondsHelper {
         if SecondTick {
             return Color.yellow
         }
-        return Color.gray
+        return Color.white
     }
     
     func lightBlinkSeconds(With Expression: Int) -> Int {

@@ -22,7 +22,7 @@ struct MinutesRowView: View {
                                 .foregroundColor(MinutesHelper.shared.lightOnMinutesRowBy(lightCount: self.lightsCount, atIndex: index))
                                 .overlay(
                                     UnevenRoundedRectangle(cornerRadii: .init(topLeading: 10.0, bottomLeading: 10))
-                                        .stroke(Color.black, lineWidth: 1)
+                                        .stroke(Color.black, lineWidth: 3)
                                 )
                         } else if index == 10 {
                             UnevenRoundedRectangle(cornerRadii: .init(bottomTrailing: 10, topTrailing: 10))
@@ -30,7 +30,7 @@ struct MinutesRowView: View {
                                 .foregroundColor(MinutesHelper.shared.lightOnMinutesRowBy(lightCount: self.lightsCount, atIndex: index))
                                 .overlay(
                                     UnevenRoundedRectangle(cornerRadii: .init(bottomTrailing: 10, topTrailing: 10))
-                                        .stroke(Color.black, lineWidth: 1)
+                                        .stroke(Color.black, lineWidth: 3)
                                 )
                         } else {
                             Rectangle()
@@ -39,7 +39,7 @@ struct MinutesRowView: View {
                                 .cornerRadius(isTopRow ? 0 : 3)
                                 .overlay(
                                     RoundedRectangle(cornerRadius: isTopRow ? 0 : 3)
-                                        .stroke(Color.black, lineWidth: 1)
+                                        .stroke(Color.black, lineWidth: 3)
                                 )
                         }
                     }
@@ -53,7 +53,7 @@ struct MinutesRowView: View {
                                 .frame(width: 70, height: 30)
                                 .overlay(
                                     UnevenRoundedRectangle(cornerRadii: .init(topLeading: 10.0, bottomLeading: 10))
-                                        .stroke(Color.black, lineWidth: 1)
+                                        .stroke(Color.black, lineWidth: 3)
                                 )
                         } else if index == 1 || index == 2 {
                             Rectangle()
@@ -62,7 +62,7 @@ struct MinutesRowView: View {
                                 .cornerRadius(isTopRow ? 0 : 3)
                                 .overlay(
                                     RoundedRectangle(cornerRadius: 0)
-                                        .stroke(Color.black, lineWidth: 1)
+                                        .stroke(Color.black, lineWidth: 3)
                                 )
                         } else if index == 3 {
                             UnevenRoundedRectangle(cornerRadii: .init(bottomTrailing: 10, topTrailing: 10))
@@ -70,7 +70,7 @@ struct MinutesRowView: View {
                                 .frame(width: 70, height: 30)
                                 .overlay(
                                     UnevenRoundedRectangle(cornerRadii: .init(bottomTrailing: 10, topTrailing: 10))
-                                        .stroke(Color.black, lineWidth: 1)
+                                        .stroke(Color.black, lineWidth: 3)
                                 )
                         }
                     }
@@ -80,10 +80,10 @@ struct MinutesRowView: View {
     }
 }
 
-#if DEBUG
-struct MinutesRowView_Previews: PreviewProvider {
-    static var previews: some View {
-        MinutesRowView(lightsCount: 3, isTopRow: true)
-    }
-}
-#endif
+//#if DEBUG
+//struct MinutesRowView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        MinutesRowView(lightsCount: 3, isTopRow: true)
+//    }
+//}
+//#endif
