@@ -39,6 +39,13 @@ final class DevBerlinClockTests: XCTestCase {
         XCTAssertEqual(colorForFalse, Color.gray, "Color should be gray when Hours is false")
     }
     
+    func testMinutesColor() throws {
+        let colorRed = ClockColorSetting.shared.lightOnMinutesRowBy(lightCount: 11, atIndex: 2)
+        XCTAssertEqual(colorRed, Color.red, "Color should be yellow when Hours is true")
+        let colorYellow = ClockColorSetting.shared.lightOnMinutesRowBy(lightCount: 11, atIndex: 1)
+        XCTAssertEqual(colorYellow, Color.yellow, "Color should be yellow when Hours is true")
+    }
+    
     func testHourLightFunction() throws {
                 // Test when SecondTick is true
         let colorLight1 = ClockColorSetting.shared.lightCountsHoursTop(With: 5)

@@ -25,6 +25,14 @@ struct ClockView: View {
                 HoursRowView(lightsCount: ClockColorSetting.shared.lightCountsHoursBottom(With: currentTime.hour), isTopRow: false)
                     .accessibility(identifier: "secondRowHours")
             }
+            
+            VStack {
+                // Minutes rows
+                MinutesRowView(lightsCount: ClockColorSetting.shared.lightCountsMinutesBottom(With: currentTime.minute), isTopRow: true)
+                    .accessibility(identifier: "firstRowMinutes")
+                MinutesRowView(lightsCount: ClockColorSetting.shared.lightCountsMinutesBottom(With: currentTime.minute), isTopRow: false)
+                    .accessibility(identifier: "secondRowMinutes")
+            }
 
         }
         .padding()
@@ -52,6 +60,6 @@ struct ClockView: View {
     }
 }
 
-#Preview {
-    ClockView()
-}
+//#Preview {
+//    ClockView()
+//}
