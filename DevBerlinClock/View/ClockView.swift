@@ -28,7 +28,7 @@ struct ClockView: View {
             
             VStack {
                 // Minutes rows
-                MinutesRowView(lightsCount: ClockColorSetting.shared.lightCountsMinutesBottom(With: currentTime.minute), isTopRow: true)
+                MinutesRowView(lightsCount: ClockColorSetting.shared.lightCountsMinutesTop(With: currentTime.minute), isTopRow: true)
                     .accessibility(identifier: "firstRowMinutes")
                 MinutesRowView(lightsCount: ClockColorSetting.shared.lightCountsMinutesBottom(With: currentTime.minute), isTopRow: false)
                     .accessibility(identifier: "secondRowMinutes")
