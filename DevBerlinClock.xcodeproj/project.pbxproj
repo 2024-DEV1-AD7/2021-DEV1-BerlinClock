@@ -8,12 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		FF82E37E2B4F2A6100D80628 /* DevBerlinClockApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF82E37D2B4F2A6100D80628 /* DevBerlinClockApp.swift */; };
-		FF82E3802B4F2A6100D80628 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF82E37F2B4F2A6100D80628 /* ContentView.swift */; };
 		FF82E3822B4F2A6300D80628 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF82E3812B4F2A6300D80628 /* Assets.xcassets */; };
 		FF82E3852B4F2A6300D80628 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF82E3842B4F2A6300D80628 /* Preview Assets.xcassets */; };
 		FF82E38F2B4F2A6300D80628 /* DevBerlinClockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF82E38E2B4F2A6300D80628 /* DevBerlinClockTests.swift */; };
 		FF82E3992B4F2A6300D80628 /* DevBerlinClockUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF82E3982B4F2A6300D80628 /* DevBerlinClockUITests.swift */; };
 		FF82E39B2B4F2A6300D80628 /* DevBerlinClockUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF82E39A2B4F2A6300D80628 /* DevBerlinClockUITestsLaunchTests.swift */; };
+		FF82E3BD2B50171700D80628 /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF82E3B82B50171600D80628 /* ClockView.swift */; };
+		FF82E3C32B50176700D80628 /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF82E3C22B50176700D80628 /* Time.swift */; };
+		FF82E3C52B50176900D80628 /* ClockColorSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF82E3C42B50176900D80628 /* ClockColorSetting.swift */; };
+		FF82E3C72B50176D00D80628 /* SecondRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF82E3C62B50176C00D80628 /* SecondRowView.swift */; };
+		FF82E3CB2B5017DA00D80628 /* DS-DIGI.TTF in Resources */ = {isa = PBXBuildFile; fileRef = FF82E3C92B50177300D80628 /* DS-DIGI.TTF */; };
+		FF82E3CC2B5017DD00D80628 /* DS-DIGIB.TTF in Resources */ = {isa = PBXBuildFile; fileRef = FF82E3C82B50177300D80628 /* DS-DIGIB.TTF */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +41,6 @@
 /* Begin PBXFileReference section */
 		FF82E37A2B4F2A6100D80628 /* DevBerlinClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DevBerlinClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF82E37D2B4F2A6100D80628 /* DevBerlinClockApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevBerlinClockApp.swift; sourceTree = "<group>"; };
-		FF82E37F2B4F2A6100D80628 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FF82E3812B4F2A6300D80628 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF82E3842B4F2A6300D80628 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FF82E38A2B4F2A6300D80628 /* DevBerlinClockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DevBerlinClockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +48,13 @@
 		FF82E3942B4F2A6300D80628 /* DevBerlinClockUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DevBerlinClockUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF82E3982B4F2A6300D80628 /* DevBerlinClockUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevBerlinClockUITests.swift; sourceTree = "<group>"; };
 		FF82E39A2B4F2A6300D80628 /* DevBerlinClockUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevBerlinClockUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FF82E3B82B50171600D80628 /* ClockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
+		FF82E3C22B50176700D80628 /* Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
+		FF82E3C42B50176900D80628 /* ClockColorSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockColorSetting.swift; sourceTree = "<group>"; };
+		FF82E3C62B50176C00D80628 /* SecondRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondRowView.swift; sourceTree = "<group>"; };
+		FF82E3C82B50177300D80628 /* DS-DIGIB.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DS-DIGIB.TTF"; sourceTree = "<group>"; };
+		FF82E3C92B50177300D80628 /* DS-DIGI.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DS-DIGI.TTF"; sourceTree = "<group>"; };
+		FF82E3CA2B5017A500D80628 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +105,14 @@
 		FF82E37C2B4F2A6100D80628 /* DevBerlinClock */ = {
 			isa = PBXGroup;
 			children = (
+				FF82E3CA2B5017A500D80628 /* Info.plist */,
 				FF82E37D2B4F2A6100D80628 /* DevBerlinClockApp.swift */,
-				FF82E37F2B4F2A6100D80628 /* ContentView.swift */,
+				FF82E3C22B50176700D80628 /* Time.swift */,
+				FF82E3C42B50176900D80628 /* ClockColorSetting.swift */,
+				FF82E3C62B50176C00D80628 /* SecondRowView.swift */,
+				FF82E3B82B50171600D80628 /* ClockView.swift */,
+				FF82E3C92B50177300D80628 /* DS-DIGI.TTF */,
+				FF82E3C82B50177300D80628 /* DS-DIGIB.TTF */,
 				FF82E3812B4F2A6300D80628 /* Assets.xcassets */,
 				FF82E3832B4F2A6300D80628 /* Preview Content */,
 			);
@@ -231,8 +248,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF82E3CB2B5017DA00D80628 /* DS-DIGI.TTF in Resources */,
 				FF82E3852B4F2A6300D80628 /* Preview Assets.xcassets in Resources */,
 				FF82E3822B4F2A6300D80628 /* Assets.xcassets in Resources */,
+				FF82E3CC2B5017DD00D80628 /* DS-DIGIB.TTF in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,8 +276,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF82E3802B4F2A6100D80628 /* ContentView.swift in Sources */,
+				FF82E3C32B50176700D80628 /* Time.swift in Sources */,
 				FF82E37E2B4F2A6100D80628 /* DevBerlinClockApp.swift in Sources */,
+				FF82E3BD2B50171700D80628 /* ClockView.swift in Sources */,
+				FF82E3C52B50176900D80628 /* ClockColorSetting.swift in Sources */,
+				FF82E3C72B50176D00D80628 /* SecondRowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,6 +446,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"DevBerlinClock/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DevBerlinClock/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -452,6 +476,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"DevBerlinClock/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DevBerlinClock/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
