@@ -33,7 +33,6 @@ struct ClockView: View {
             }
 
         }
-        .padding()
         .onAppear {
 
             self.currentTime = GlobalHelper.shared.updateTimer()
@@ -44,7 +43,7 @@ struct ClockView: View {
         }
         
         Text(String(format: "%02d: %02d", currentTime.hour, currentTime.minute))
-            .font(Font.custom("DS-Digital-Bold", size: 30))
+            .font(Font.custom("DS-Digital-Bold", size: 50))
             .font(.body)
             
 

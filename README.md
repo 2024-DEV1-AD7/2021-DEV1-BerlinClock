@@ -1,5 +1,7 @@
 # Running and Executing Your Application in Xcode
 
+![Alt text](Example.png?raw=true "Berlin Clock")
+
 ## Prerequisites
 
 Before you begin, make sure you have the following installed on your machine:
