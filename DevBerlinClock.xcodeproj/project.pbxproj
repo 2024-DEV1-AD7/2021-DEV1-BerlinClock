@@ -15,12 +15,15 @@
 		FF82E39B2B4F2A6300D80628 /* DevBerlinClockUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF82E39A2B4F2A6300D80628 /* DevBerlinClockUITestsLaunchTests.swift */; };
 		FF82E3BD2B50171700D80628 /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF82E3B82B50171600D80628 /* ClockView.swift */; };
 		FF82E3C32B50176700D80628 /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF82E3C22B50176700D80628 /* Time.swift */; };
-		FF82E3C52B50176900D80628 /* ClockColorSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF82E3C42B50176900D80628 /* ClockColorSetting.swift */; };
+		FF82E3C52B50176900D80628 /* GlobalHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF82E3C42B50176900D80628 /* GlobalHelper.swift */; };
 		FF82E3C72B50176D00D80628 /* SecondRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF82E3C62B50176C00D80628 /* SecondRowView.swift */; };
 		FF82E3CB2B5017DA00D80628 /* DS-DIGI.TTF in Resources */ = {isa = PBXBuildFile; fileRef = FF82E3C92B50177300D80628 /* DS-DIGI.TTF */; };
 		FF82E3CC2B5017DD00D80628 /* DS-DIGIB.TTF in Resources */ = {isa = PBXBuildFile; fileRef = FF82E3C82B50177300D80628 /* DS-DIGIB.TTF */; };
 		FF82E3D32B50196F00D80628 /* HoursRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF82E3D22B50196F00D80628 /* HoursRowView.swift */; };
 		FF82E3D72B5022C100D80628 /* MinutesRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF82E3D62B5022C100D80628 /* MinutesRowView.swift */; };
+		FFB21C922B50818500637CD6 /* SecondsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB21C912B50818500637CD6 /* SecondsHelper.swift */; };
+		FFB21C942B50828C00637CD6 /* MinutesHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB21C932B50828C00637CD6 /* MinutesHelper.swift */; };
+		FFB21C962B50832700637CD6 /* HoursHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB21C952B50832700637CD6 /* HoursHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,13 +55,16 @@
 		FF82E39A2B4F2A6300D80628 /* DevBerlinClockUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevBerlinClockUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		FF82E3B82B50171600D80628 /* ClockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
 		FF82E3C22B50176700D80628 /* Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
-		FF82E3C42B50176900D80628 /* ClockColorSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockColorSetting.swift; sourceTree = "<group>"; };
+		FF82E3C42B50176900D80628 /* GlobalHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalHelper.swift; sourceTree = "<group>"; };
 		FF82E3C62B50176C00D80628 /* SecondRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondRowView.swift; sourceTree = "<group>"; };
 		FF82E3C82B50177300D80628 /* DS-DIGIB.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DS-DIGIB.TTF"; sourceTree = "<group>"; };
 		FF82E3C92B50177300D80628 /* DS-DIGI.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DS-DIGI.TTF"; sourceTree = "<group>"; };
-		FF82E3CA2B5017A500D80628 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		FF82E3CA2B5017A500D80628 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF82E3D22B50196F00D80628 /* HoursRowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HoursRowView.swift; sourceTree = "<group>"; };
 		FF82E3D62B5022C100D80628 /* MinutesRowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinutesRowView.swift; sourceTree = "<group>"; };
+		FFB21C912B50818500637CD6 /* SecondsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondsHelper.swift; sourceTree = "<group>"; };
+		FFB21C932B50828C00637CD6 /* MinutesHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinutesHelper.swift; sourceTree = "<group>"; };
+		FFB21C952B50832700637CD6 /* HoursHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoursHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,10 +115,10 @@
 		FF82E37C2B4F2A6100D80628 /* DevBerlinClock */ = {
 			isa = PBXGroup;
 			children = (
-				FF82E3CA2B5017A500D80628 /* Info.plist */,
 				FF82E37D2B4F2A6100D80628 /* DevBerlinClockApp.swift */,
-				FF82E3CE2B50190700D80628 /* Modal */,
-				FF82E3D12B50194100D80628 /* Helper */,
+				FF82E3CA2B5017A500D80628 /* Info.plist */,
+				FF82E3CE2B50190700D80628 /* Models */,
+				FF82E3D12B50194100D80628 /* Helpers */,
 				FF82E3CF2B50191A00D80628 /* View */,
 				FF82E3D02B50193300D80628 /* Fonts */,
 				FF82E3812B4F2A6300D80628 /* Assets.xcassets */,
@@ -146,12 +152,12 @@
 			path = DevBerlinClockUITests;
 			sourceTree = "<group>";
 		};
-		FF82E3CE2B50190700D80628 /* Modal */ = {
+		FF82E3CE2B50190700D80628 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				FF82E3C22B50176700D80628 /* Time.swift */,
 			);
-			path = Modal;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		FF82E3CF2B50191A00D80628 /* View */ = {
@@ -174,12 +180,15 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
-		FF82E3D12B50194100D80628 /* Helper */ = {
+		FF82E3D12B50194100D80628 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				FF82E3C42B50176900D80628 /* ClockColorSetting.swift */,
+				FF82E3C42B50176900D80628 /* GlobalHelper.swift */,
+				FFB21C912B50818500637CD6 /* SecondsHelper.swift */,
+				FFB21C932B50828C00637CD6 /* MinutesHelper.swift */,
+				FFB21C952B50832700637CD6 /* HoursHelper.swift */,
 			);
-			path = Helper;
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -317,8 +326,11 @@
 				FF82E3C32B50176700D80628 /* Time.swift in Sources */,
 				FF82E37E2B4F2A6100D80628 /* DevBerlinClockApp.swift in Sources */,
 				FF82E3BD2B50171700D80628 /* ClockView.swift in Sources */,
-				FF82E3C52B50176900D80628 /* ClockColorSetting.swift in Sources */,
+				FF82E3C52B50176900D80628 /* GlobalHelper.swift in Sources */,
+				FFB21C942B50828C00637CD6 /* MinutesHelper.swift in Sources */,
+				FFB21C962B50832700637CD6 /* HoursHelper.swift in Sources */,
 				FF82E3C72B50176D00D80628 /* SecondRowView.swift in Sources */,
+				FFB21C922B50818500637CD6 /* SecondsHelper.swift in Sources */,
 				FF82E3D32B50196F00D80628 /* HoursRowView.swift in Sources */,
 				FF82E3D72B5022C100D80628 /* MinutesRowView.swift in Sources */,
 			);

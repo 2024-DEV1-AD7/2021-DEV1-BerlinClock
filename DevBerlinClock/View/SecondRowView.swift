@@ -11,16 +11,14 @@ struct SecondRowView: View {
     var second: Bool
 
     var body: some View {
-        HStack {
-            Circle()
-                .frame(width: 50, height: 50)
-                .foregroundColor(ClockColorSetting.shared.checkColorForSeconds(By: second))
-                .overlay(
-                    Circle()
-                        .stroke(Color.black, lineWidth: 1)
-                )
-                .accessibility(identifier: "secondRowCircle")
-        }
+        Circle()
+            .frame(width: 50, height: 50)
+            .foregroundColor(SecondsHelper.shared.checkColorForSeconds(By: second))
+            .overlay(
+                Circle()
+                    .stroke(Color.black, lineWidth: 1)
+            )
+            .accessibility(identifier: "secondRowCircle")
     }
 }
 

@@ -16,7 +16,7 @@ struct HoursRowView: View {
             ForEach(0..<4) { index in
                 if(index == 0) {
                     UnevenRoundedRectangle(cornerRadii: .init(topLeading: 10.0, bottomLeading: 10))
-                        .foregroundColor(ClockColorSetting.shared.checkColorForHours(By: index < self.lightsCount))
+                        .foregroundColor(HoursHelper.shared.checkColorForHours(By: index < self.lightsCount))
                                     .frame(width: 70, height: 30)
                                     .overlay(
                                         UnevenRoundedRectangle(cornerRadii: .init(topLeading: 10.0, bottomLeading: 10))
@@ -26,7 +26,7 @@ struct HoursRowView: View {
                 if(index == 1 || index == 2) {
                     Rectangle()
                         .frame(width: 70, height: 30)
-                        .foregroundColor(ClockColorSetting.shared.checkColorForHours(By: index < self.lightsCount))
+                        .foregroundColor(HoursHelper.shared.checkColorForHours(By: index < self.lightsCount))
                         .overlay(
                             RoundedRectangle(cornerRadius: 0)
                                 .stroke(Color.black, lineWidth: 1)
@@ -34,7 +34,7 @@ struct HoursRowView: View {
                 }
                 if(index == 3) {
                     UnevenRoundedRectangle(cornerRadii: .init(bottomTrailing: 10, topTrailing: 10))
-                        .foregroundColor(ClockColorSetting.shared.checkColorForHours(By: index < self.lightsCount))
+                        .foregroundColor(HoursHelper.shared.checkColorForHours(By: index < self.lightsCount))
                                     .frame(width: 70, height: 30)
                                     .overlay(
                                         UnevenRoundedRectangle(cornerRadii: .init(bottomTrailing: 10, topTrailing: 10))
@@ -47,6 +47,6 @@ struct HoursRowView: View {
     }
 }
 
-#Preview {
-    HoursRowView(lightsCount: 3, isTopRow: false)
-}
+//#Preview {
+//    HoursRowView(lightsCount: 3, isTopRow: false)
+//}
