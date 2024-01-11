@@ -19,6 +19,7 @@
 		FF82E3C72B50176D00D80628 /* SecondRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF82E3C62B50176C00D80628 /* SecondRowView.swift */; };
 		FF82E3CB2B5017DA00D80628 /* DS-DIGI.TTF in Resources */ = {isa = PBXBuildFile; fileRef = FF82E3C92B50177300D80628 /* DS-DIGI.TTF */; };
 		FF82E3CC2B5017DD00D80628 /* DS-DIGIB.TTF in Resources */ = {isa = PBXBuildFile; fileRef = FF82E3C82B50177300D80628 /* DS-DIGIB.TTF */; };
+		FF82E3D32B50196F00D80628 /* HoursRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF82E3D22B50196F00D80628 /* HoursRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		FF82E3C82B50177300D80628 /* DS-DIGIB.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DS-DIGIB.TTF"; sourceTree = "<group>"; };
 		FF82E3C92B50177300D80628 /* DS-DIGI.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DS-DIGI.TTF"; sourceTree = "<group>"; };
 		FF82E3CA2B5017A500D80628 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		FF82E3D22B50196F00D80628 /* HoursRowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HoursRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,12 +109,10 @@
 			children = (
 				FF82E3CA2B5017A500D80628 /* Info.plist */,
 				FF82E37D2B4F2A6100D80628 /* DevBerlinClockApp.swift */,
-				FF82E3C22B50176700D80628 /* Time.swift */,
-				FF82E3C42B50176900D80628 /* ClockColorSetting.swift */,
-				FF82E3C62B50176C00D80628 /* SecondRowView.swift */,
-				FF82E3B82B50171600D80628 /* ClockView.swift */,
-				FF82E3C92B50177300D80628 /* DS-DIGI.TTF */,
-				FF82E3C82B50177300D80628 /* DS-DIGIB.TTF */,
+				FF82E3CE2B50190700D80628 /* Modal */,
+				FF82E3D12B50194100D80628 /* Helper */,
+				FF82E3CF2B50191A00D80628 /* View */,
+				FF82E3D02B50193300D80628 /* Fonts */,
 				FF82E3812B4F2A6300D80628 /* Assets.xcassets */,
 				FF82E3832B4F2A6300D80628 /* Preview Content */,
 			);
@@ -142,6 +142,41 @@
 				FF82E39A2B4F2A6300D80628 /* DevBerlinClockUITestsLaunchTests.swift */,
 			);
 			path = DevBerlinClockUITests;
+			sourceTree = "<group>";
+		};
+		FF82E3CE2B50190700D80628 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				FF82E3C22B50176700D80628 /* Time.swift */,
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
+		FF82E3CF2B50191A00D80628 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FF82E3D22B50196F00D80628 /* HoursRowView.swift */,
+				FF82E3C62B50176C00D80628 /* SecondRowView.swift */,
+				FF82E3B82B50171600D80628 /* ClockView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FF82E3D02B50193300D80628 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				FF82E3C92B50177300D80628 /* DS-DIGI.TTF */,
+				FF82E3C82B50177300D80628 /* DS-DIGIB.TTF */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		FF82E3D12B50194100D80628 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				FF82E3C42B50176900D80628 /* ClockColorSetting.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,6 +316,7 @@
 				FF82E3BD2B50171700D80628 /* ClockView.swift in Sources */,
 				FF82E3C52B50176900D80628 /* ClockColorSetting.swift in Sources */,
 				FF82E3C72B50176D00D80628 /* SecondRowView.swift in Sources */,
+				FF82E3D32B50196F00D80628 /* HoursRowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

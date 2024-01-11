@@ -15,7 +15,15 @@ struct ClockView: View {
 
             HStack {
                 // Seconds row
-                SecondRowView(second: currentTime.second % 2 == 0)
+                SecondRowView(second: ClockColorSetting.shared.lightBlinkSeconds(With: currentTime.second) == 0)
+            }
+            
+            VStack {
+                // Hours rows
+                HoursRowView(lightsCount: ClockColorSetting.shared.lightCountsHoursTop(With: currentTime.hour), isTopRow: true)
+                    .accessibility(identifier: "firstRowHours")
+                HoursRowView(lightsCount: ClockColorSetting.shared.lightCountsHoursBottom(With: currentTime.hour), isTopRow: false)
+                    .accessibility(identifier: "secondRowHours")
             }
 
         }
