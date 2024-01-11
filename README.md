@@ -1,6 +1,6 @@
 # Running and Executing Your Application in Xcode
 
-![Alt text](Example.png?raw=true "Berlin Clock")
+![Alt text](ExampleImage.png?raw=true "Berlin Clock")
 
 ## Prerequisites
 

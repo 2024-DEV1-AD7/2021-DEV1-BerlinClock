@@ -80,10 +80,10 @@ struct MinutesRowView: View {
     }
 }
 
-//#if DEBUG
-//struct MinutesRowView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        MinutesRowView(lightsCount: 3, isTopRow: true)
-//    }
-//}
-//#endif
+#if DEBUG
+struct MinutesRowView_Previews: PreviewProvider {
+    static var previews: some View {
+        MinutesRowView(lightsCount: 3, isTopRow: true)
+    }
+}
+#endif
